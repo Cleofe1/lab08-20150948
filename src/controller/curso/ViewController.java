@@ -22,7 +22,7 @@ public class ViewController extends HttpServlet {
 		String query = "select  from " + Curso.class.getName();
 		List<Curso> listas = (List<Curso>) pm.newQuery(query).execute();
 		request.setAttribute("listas", listas);
-		request.getRequestDispatcher("/WEB-INF/view/course/view.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/Views/Cursos/view.jsp").forward(request, response);
 		pm.close();
 	}
 

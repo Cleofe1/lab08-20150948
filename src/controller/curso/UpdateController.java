@@ -24,7 +24,7 @@ public class UpdateController extends HttpServlet {
 		
 		request.setAttribute("curso", r);
 		
-		request.getRequestDispatcher("/WEB-INF/view/course/update.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/Views/Cursos/update.jsp").forward(request, response);
 		pm.close();
 		
 		
@@ -44,7 +44,7 @@ public class UpdateController extends HttpServlet {
 		r.setNivel(nivel);
 		r.setDepartamento(departamento);
 		
-		response.sendRedirect("/course/view");
+		response.sendRedirect("/cursos/view");
 		pm.close();
 		
 	}	  

@@ -57,7 +57,7 @@ public class CursosControllerIndex extends HttpServlet {
 				RequestDispatcher dp= getServletContext().getRequestDispatcher("/WEB-INF/Views/Errors/error.jsp");
 				dp.forward(request, response);
 			}else{
-				RequestDispatcher dp=getServletContext().getRequestDispatcher("/alumnos/view");
+				RequestDispatcher dp=getServletContext().getRequestDispatcher("/cursos/view");
 				dp.forward(request, response);
 				}
 			}

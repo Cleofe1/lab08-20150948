@@ -1,4 +1,4 @@
-package controller.curso;
+	package controller.curso;
 
 import java.io.IOException;  
 
@@ -22,7 +22,7 @@ public class FindController extends HttpServlet {
 			Key k = KeyFactory.createKey(Curso.class.getSimpleName(), Long.parseLong(request.getParameter("cursoId")));
 			Curso r = pm.getObjectById(Curso.class, k);
 			request.setAttribute("curso", r);
-			request.getRequestDispatcher("/WEB-INF/view/course/read.jsp").forward(request,response);
+			request.getRequestDispatcher("/WEB-INF/Views/Cursos/read.jsp").forward(request,response);
 			pm.close();
 			
 			

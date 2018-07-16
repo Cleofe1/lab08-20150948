@@ -27,11 +27,11 @@ public class DeleteController extends HttpServlet {
 				Long id = r.getId();
 				pm.deletePersistent(r);
 				
-				response.sendRedirect("/course/view");
+				response.sendRedirect("/cursos/view");
 				pm.close();
 			}
 		}catch (JDOObjectNotFoundException e) {
-			response.sendRedirect("/course/view");
+			response.sendRedirect("/cursos/view");
 		}
 	
 	}

@@ -46,7 +46,7 @@
 	<p>Nombre del curso ya existe </p>
 	<% } %>
 	<p></p>
-	<form method="post" action="/course/add" onsubmit="return checkSubmit();">
+	<form method="post" action="/cursos/add" onsubmit="return checkSubmit();">
 		<input type="hidden" name="action" value="crearCurso" />
 		<center>
 		<table bordercolor = "rgb(21, 67, 96)" border="10" cellspacing="5" cellpadding="5">

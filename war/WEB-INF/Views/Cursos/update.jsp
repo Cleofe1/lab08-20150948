@@ -49,7 +49,7 @@
 	<p /> 
 	<p></p>
 	
-	<form method="post" action="/course/update?cursoId=<%=r.getId() %>">
+	<form method="post" action="/cursos/update?cursoId=<%=r.getId() %>">
 	
 		<input type="hidden" name="action" value="editarCurso" />
 		<table border="0" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC">

@@ -64,9 +64,9 @@ List<Curso> listas = (List<Curso>) request.getAttribute("listas");
 		<td> <%=c.getDepartamento() %></td>
 		<td><%=c.getNivel()%></td>
 			<td>
-				<span><a href="/course/find?cursoId=<%= c.getId() %>">Ver mas</a></span>
-				<span><a href="/course/delete?cursoId=<%= c.getId() %>">Eliminar</a></span>
-				<span><a href="/course/update?cursoId=<%= c.getId() %>">Actualizar</a></span>
+				<span><a href="/cursos/find?cursoId=<%= c.getId() %>">Ver mas</a></span>
+				<span><a href="/cursos/delete?cursoId=<%= c.getId() %>">Eliminar</a></span>
+				<span><a href="/cursos/update?cursoId=<%= c.getId() %>">Actualizar</a></span>
 			</td>
 			</tr>
 		<%

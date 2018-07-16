@@ -66,7 +66,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<a href="../course/view" class="btn btn-info"  role="button"  >Retornar a la lista de Cursos</a>
+					<a href="../cursos/view" class="btn btn-info"  role="button"  >Retornar a la lista de Cursos</a>
 				</div>
 	</header>
 </body>

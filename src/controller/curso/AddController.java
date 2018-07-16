@@ -47,7 +47,7 @@ public class AddController extends HttpServlet {
         Curso nuevo= new Curso(name, departamento, nivel);  
 		try{
 			pm.makePersistent(nuevo);
-			response.sendRedirect("/course/view");
+			response.sendRedirect("/cursos/view");
 			
 		}
 		finally {
@@ -56,13 +56,13 @@ public class AddController extends HttpServlet {
 		}
 		else {
 			request.setAttribute("existe", existe);
-			request.getRequestDispatcher("/WEB-INF/view/course/add.jsp").forward(request, response);
+			request.getRequestDispatcher("/WEB-INF/Views/Cursos/add.jsp").forward(request, response);
 			}
 		}
 		
 		else{
 			request.setAttribute("existe", existe);
-			request.getRequestDispatcher("/WEB-INF/view/course/add.jsp").forward(request, response);
+			request.getRequestDispatcher("/WEB-INF/Views/Cursos/add.jsp").forward(request, response);
 			
 		}
 		
